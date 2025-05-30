@@ -127,7 +127,7 @@ body.dark-theme .header {
   margin: 0 auto 1rem;
   overflow: hidden;
   border-radius: 50%;
-  border: 3px solid var(--light);
+  border: 3px solid var(primary);
   box-shadow: 0 2px 5px rgba(0,0,0,0.2);
 }
 
