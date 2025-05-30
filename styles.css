@@ -112,6 +112,11 @@ body.dark-theme .header {
   font-size: 0.9rem;
   height: 1.5rem;
   overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  /* Ensure height fits one role only */
+  height: 2rem;
 }
 
 
