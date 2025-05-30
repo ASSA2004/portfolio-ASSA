@@ -106,7 +106,6 @@ body.dark-theme .header {
 .hero-badge {
   position: relative;
   display: inline-block;
-  background: rgba(255, 255, 255, 0.1);
   padding: 0.3rem 0.8rem;
   border-radius: 15px;
   font-size: 0.9rem;
@@ -267,7 +266,7 @@ body.dark-theme .timeline-content {
 
 /* Apply border and padding to the entire skill-category block */
 .skill-category {
-  border: 4px 3px outset violet;
+  border: 4px outset violet;
   border-radius: 10px;
   padding: 1.5rem;
   display: flex;
