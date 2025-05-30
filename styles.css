@@ -220,7 +220,7 @@ body.dark-theme .timeline-content {
 
 /* Apply border and padding to the entire skill-category block */
 .skill-category {
-  border: 2px solid violet;
+  border: 4px inset violet;
   border-radius: 10px;
   padding: 1.5rem;
   display: flex;
