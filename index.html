@@ -1,292 +1,249 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sadiq Ali - Portfolio</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sadiq Ali | Mobile App Developer</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet" />
+   <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-ry+XQe0Cn/OXRcRCPeAR5yyEFshKXYlH1TMWAf8HnB8fWqg7rPCLnZJ4AUU6Wn5ph9pZ5pYbM+E7lTCFlTCkqw=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <!-- Header -->
-  <header class="header">
-    <nav class="nav container">
-      <a href="#home" class="logo">Sadiq Ali</a>
-      <ul class="nav-menu">
-        <li><a href="#home" class="nav-link active">Home</a></li>
-        <li><a href="#about" class="nav-link">About</a></li>
-        <li><a href="#experience" class="nav-link">Experience</a></li>
-        <li><a href="#skills" class="nav-link">Skills</a></li>
-      </ul>
-      <button class="hamburger" aria-label="Toggle navigation">
-        <span></span><span></span><span></span>
-      </button>
+  <header class="navbar">
+    <div class="logo">Sadiq <span>Ali</span></div>
+    <nav>
+      <a href="#hero" class="active">Home</a>
+      <a href="#experience-section">Experience</a>
+      <a href="#projects-section">Projects</a>
+      <button class="dark-toggle"><i class="fas fa-moon"></i></button>
     </nav>
   </header>
 
-  <!-- Theme Toggle and CV Download -->
-  <div class="utility-buttons container" style="text-align: right; margin-top: 100px;">
-    <a href="https://drive.google.com/file/d/1Y3hFjEG0Lk61_k5-2oTQ-ZPgfTHuQVp9/view?usp=drive_link" download class="btn-primary">📄 Download CV</a>
-  </div>
+  <section class="hero" id="hero">
+    <img src="profile.jpg" alt="Sadiq Ali" class="profile-pic" />
+    <h1 class="name">Sadiq Ali</h1>
+    <div class="hero-badge">
+  <span class="role-cycle">Software Engineer</span>
+  <span class="role-cycle">Mobile App Developer</span>
+  <span class="role-cycle">Full Stack Web Developer</span>
+</div>
 
-  <!-- Hero Section -->
-  <section id="home" class="hero">
-    <div class="container hero-content fade-in">
-       <div class="hero-image-container">
-        <img src="profile-1.jpg" alt="Sadiq Ali Profile" class="hero-image">
-      </div>
-      <div class="hero-badge">
-        <span class="role-cycle">Software Engineer</span>
-        <span class="role-cycle">Mobile App Developer</span>
-        <span class="role-cycle">Web App Developer</span>
-      </div>
-        <h1>Sadiq Ali <span class="name"> Shareef</span></h1>
-        <p class="slogan" data-text="Blending Creativity with Technology">Innovate, Create, Code</p>
-        <p>As a passionate software engineer and computer science enthusiast, I thrive at the intersection of innovation and problem-solving. Committed to lifelong learning, I embrace challenges as opportunities to grow and refine my craft.
-
-</p>
-        <div class="hero-buttons">
-          <a href="#projects" class="btn-primary">View My Work</a>
-          <a href="#contact" class="btn-secondary">Let's Connect</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- About Section -->
-  <section id="about" class="section about">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-badge">About Me</span>
-        <p class="section-subtitle">Driven by curiosity, grounded in innovation.</p>
-      </div>
-      <div class="about-grid">
-        <div class="about-image">
-          <div class="about-image-container">👨‍💻</div>
-        </div>
-        <div class="about-content">
-          <h3>Computer Science Student</h3>
-          <p>I actively engage in sports, event organization, and mentoring juniors. I'm passionate about leadership, teamwork, and exploring nature. These experiences shape my character, keeping me grounded, disciplined, and socially connected.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Experience Section -->
-  <section id="experience" class="section">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-badge">Experience</span>
-        <h2 class="section-title">My Journey</h2>
-      </div>
-      <div class="experience-timeline">
-        <div class="timeline-item fade-in">
-          <div class="timeline-content">
-            <span class="timeline-date">Aug 2024 – Nov 2024</span>
-            <h3 class="timeline-title">Freelance Web Developer</h3>
-            <p class="timeline-company">Landing Page Specialist</p>
-            <p class="timeline-description">Designed and developed responsive landing pages using HTML, CSS, and JavaScript.</p>
-          </div>
-        </div>
-        <div class="timeline-item fade-in">
-          <div class="timeline-content">
-            <span class="timeline-date">June 2024 – July 2024</span>
-            <h3 class="timeline-title">Front-End Intern</h3>
-            <p class="timeline-company">Edunet Foundation</p>
-            <p class="timeline-description">Developed and maintained user interfaces, enhanced functionality and user experience.</p>
-          </div>
-        </div>
-       
-      </div>
-    </div>
-  </section>
-
-  <!-- Skills Section -->
-  <section id="skills" class="section skills">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-badge">Skills</span>
-        <h2 class="section-title">What I Know</h2>
-      </div>
-      <div class="skills-grid">
-        <div class="skill-category fade-in">
-          <h3>Languages</h3>
-          <div class="skill-list">
-            <span class="skill-item">Python</span>
-            <span class="skill-item">JavaScript</span>
-            <span class="skill-item">C</span>
-            <span class="skill-item">C++</span>
-            <span class="skill-item">HTML</span>
-            <span class="skill-item">CSS</span>
-            <span class="skill-item">Java</span>
-            <span class="skill-item">XML</span>
-          </div>
-        </div>
-        <div class="skill-category fade-in">
-          <h3>Frameworks</h3>
-          <div class="skill-list">
-            <span class="skill-item">React</span>
-            <span class="skill-item">Pygame</span>
-          </div>
-        </div>
-        <div class="skill-category fade-in">
-          <h3>Database</h3>
-          <div class="skill-list">
-            <span class="skill-item">SQL</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Projects Section -->
-  <section id="projects" class="section">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-badge">Projects</span>
-        <h2 class="section-title">Featured Projects</h2>
-      </div>
-      <div class="projects-grid">
-        <article class="project-card fade-in">
-          <div class="project-image">🎮</div>
-          <div class="project-content">
-            <h3 class="project-title">Block Games <span style="font-size: 0.9rem; color: gray;">(2025)</span></h3>
-            <p class="project-description">Built with Python and Pygame.</p>
-            <div class="project-tech">
-              <span class="tech-tag">Python</span>
-              <span class="tech-tag">Pygame</span>
-            </div>
-            <br>
-            <div class="project-links">
-              <a href="https://github.com/ASSA2004" class="project-link"> GitHub</a>
-            </div>
-          </div>
-        </article>
-        <article class="project-card fade-in">
-  <div class="project-image">📝</div>
-  <div class="project-content">
-    <h3 class="project-title">To-Do List <span style="font-size: 0.9rem; color: gray;">(2024)</span></h3>
-    <p class="project-description">A basic to-do list web app.</p>
-    <div class="project-tech">
-      <span class="tech-tag">HTML</span>
-      <span class="tech-tag">JavaScript</span>
-      <span class="tech-tag">CSS</span>
-    </div>
-    <br>
-    <div class="project-links">
-      <a href="https://github.com/ASSA2004" class="project-link"> GitHub</a>
-    </div>
-  </div>
-</article>
-        <article class="project-card fade-in">
-          <div class="project-image">🔍</div>
-          <div class="project-content">
-            <h3 class="project-title">Job Finder <span style="font-size: 0.9rem; color: gray;">(2024)</span></h3>
-            <p class="project-description">Web app with ML and SQL backend.</p>
-            <div class="project-tech">
-              <span class="tech-tag">Python</span>
-              <span class="tech-tag">ML</span>
-              <span class="tech-tag">SQL</span>
-            </div>
-            <br>
-            <div class="project-links">
-              <a href="https://github.com/ASSA2004" class="project-link"> GitHub</a>
-            </div>
-          </div>
-        </article>
-         <article class="project-card fade-in">
-          <div class="project-image">🌐</div>
-            <div class="project-content">
-              <h3 class="project-title">Python Translator <span style="font-size: 0.9rem; color: gray;">(2023)</span></h3>
-              <p class="project-description">Translation app using Python libraries.</p>
-            <div class="project-tech">
-             <span class="tech-tag">Python</span>
-            </div>
-            <br>
-             <div class="project-links">
-                <a href="https://github.com/ASSA2004" class="project-link"> GitHub</a>
-            </div>
-          </div>
-         </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- Contact Section -->
-  <section id="contact" class="section contact">
-  <div class="container">
-    <div class="section-header">
-      <span class="section-badge">Contact</span>
-      <h2 class="section-title">Get in Touch</h2>
-    </div>
+    <p class="description">
+      Passionate about creating innovative software solutions with cutting-edge technology.<br />
+      Specialized in Software Engineering, Full Stack Web Development, and Mobile App Development.
+    </p>
     
-    <div class="contact-grid">
-      <!-- Contact Form -->
-      <form id="contactForm" class="contact-form fade-in">
-        <h3>Send Message</h3>
-        
-        <div class="form-group">
-          <label for="name">Full Name</label>
-          <input type="text" id="name" name="name" placeholder="Enter your name" required>
+    <a href="sadiqilaqidas@gmail.com" class="cta">
+      <i class="fas fa-envelope"></i> Get In Touch
+    </a>
+
+    <div class="social-icons">
+      <a href="#"><i class="fas fa-globe"></i></a>
+      <a href="#"><i class="fab fa-linkedin"></i></a>
+    </div>
+
+    <p class="scroll">Explore my work ↓</p>
+  </section>
+  <section class="experience-section" id="experience-section">
+  <h2 class="section-title">Experience</h2>
+  <p class="section-subtitle">Professional experience in web development and software engineering.</p>
+
+  <div class="experience-card">
+    <div class="experience-header">
+      <div>
+        <h3>Freelance Web Developer</h3>
+        <p class="role">Landing Page Specialist</p>
+      </div>
+      <div class="experience-meta">
+        <p><i class="fas fa-calendar-alt"></i> Aug 2024 - Nov 2024</p>
+        <p><i class="fas fa-map-marker-alt"></i> Remote</p>
+      </div>
+    </div>
+    <ul class="experience-list">
+      <li>Designed and developed responsive landing pages using HTML, CSS, and JavaScript</li>
+      <li>Focused on creating visually appealing interfaces with optimized user experiences</li>
+    </ul>
+  </div>
+
+  <div class="experience-card">
+    <div class="experience-header">
+      <div>
+        <h3>Front End Development Intern</h3>
+        <p class="role">Edunet Foundation</p>
+      </div>
+      <div class="experience-meta">
+        <p><i class="fas fa-calendar-alt"></i> June 2024 - July 2024</p>
+        <p><i class="fas fa-map-marker-alt"></i> Remote</p>
+      </div>
+    </div>
+    <ul class="experience-list">
+      <li>Developed and optimized user interfaces using HTML and CSS</li>
+      <li>Collaborated with team members to enhance website functionality and user experience</li>
+    </ul>
+  </div>
+</section>
+
+<section class="projects-section" id="projects-section">
+  <h2 class="section-title">Featured Projects</h2>
+  <p class="section-subtitle">
+    A collection of projects showcasing my skills in web development, mobile apps, and machine learning.
+  </p>
+
+  <div class="projects-grid">
+    <!-- Project 1 -->
+    <div class="project-card">
+      <div class="project-header">
+        <h3>KnowledgeHub</h3>
+        <div class="project-tags">
+          <span class="tag-blue">Mobile Application</span>
+          <span class="tag-purple">2025</span>
         </div>
-        
-        <div class="form-group">
-          <label for="email">Email Address</label>
-          <input type="email" id="email" name="email" placeholder="Enter your email" required>
+      </div>
+      <p class="project-desc">
+        Developed Android application with interactive user interface using Java and XML. Integrated Firebase database for real-time data storage and user authentication.
+      </p>
+      <div class="project-tech">
+        <span>Java</span>
+        <span>XML</span>
+        <span>Android Studio</span>
+        <span>Firebase</span>
+      </div>
+    </div>
+
+    <!-- Project 2 -->
+    <div class="project-card">
+      <div class="project-header">
+        <h3>Landing Page</h3>
+        <div class="project-tags">
+          <span class="tag-blue">Web Development</span>
+          <span class="tag-purple">2025</span>
         </div>
-        
-        <div class="form-group">
-          <label for="subject">Subject</label>
-          <input type="text" id="subject" name="subject" placeholder="What's this about?" required>
+      </div>
+      <p class="project-desc">
+        Designed and developed modern landing pages with seamless user experience. Applied responsive design principles for optimal device compatibility.
+      </p>
+      <div class="project-tech">
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>JavaScript</span>
+      </div>
+    </div>
+
+    <!-- Project 3 -->
+    <div class="project-card">
+      <div class="project-header">
+        <h3>Play Block: Memory Training</h3>
+        <div class="project-tags">
+          <span class="tag-blue">Game Development</span>
+          <span class="tag-purple">2024</span>
         </div>
-        
-        <div class="form-group">
-          <label for="message">Message</label>
-          <textarea id="message" name="message" rows="4" placeholder="Tell me about your project or inquiry..." required></textarea>
+      </div>
+      <p class="project-desc">
+        Developed interactive block-based games with engaging gameplay mechanics. Implemented user-friendly interfaces to enhance player interaction and experience.
+      </p>
+      <div class="project-tech">
+        <span>Python</span>
+        <span>Pygame</span>
+      </div>
+    </div>
+
+    <!-- Project 4 -->
+    <div class="project-card">
+      <div class="project-header">
+        <h3>JobFit: Resume to Profession Matcher</h3>
+        <div class="project-tags">
+          <span class="tag-blue">ML Application</span>
+          <span class="tag-purple">2024</span>
         </div>
-        
-        <button type="submit" class="btn-primary">
-          Send Message
-        </button>
-      </form>
-      
-      <!-- Contact Information -->
-      <div class="contact-info">
-        <h3>Let's Connect</h3>
-        
-        <div class="info-item">
-          
-          <p>sadiqilaqidas@gmail.com</p>
-        </div>
-        
-        <div class="info-item">
-          
-          <p>+91 9791622030</p>
-        </div>
-        
-        <div class="info-item">
-          
-          <p><a href="https://www.linkedin.com/in/sadiq-ali-309215246" target="_blank" rel="noopener noreferrer">LinkedIn Profile</a></p>
-        </div>
-        <div class="info-item">
-          
-          <p><a href="https://github.com/ASSA2004" target="_blank" rel="noopener noreferrer">GitHub</a></p>
-        </div>
-        
-        <div style="margin-top: 2rem; padding-top: 2rem; border-top: 1px solid rgba(59, 130, 246, 0.2);">
-          
-        </div>
+      </div>
+      <p class="project-desc">
+        Built a web application that uses ML models to match resumes with relevant professions. Integrated HTML front-end with Python backend for seamless user experience.
+      </p>
+      <div class="project-tech">
+        <span>Python</span>
+        <span>Machine Learning</span>
+        <span>HTML</span>
+        <span>React</span>
+        <span>SQL</span>
       </div>
     </div>
   </div>
 </section>
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container">
-      <p>© 2025 Sadiq Ali. All Rights Reserved.</p>
-    </div>
-  </footer>
 
-  <!-- Scripts -->
-  <script src="script.js"></script>
+<section class="contact-section">
+  <h2 class="section-title">Get In Touch</h2>
+  <p class="section-subtitle">
+    Let's connect and discuss opportunities to work together.
+  </p>
+
+  <div class="contact-grid">
+    <!-- Contact Info Box -->
+    <div class="contact-card">
+      <h3>Contact Information</h3>
+      <div class="contact-item">
+        <i class="fas fa-envelope"></i>
+        <div>
+          <strong>Email</strong><br />
+          sadiqilaqidas@gmail.com
+        </div>
+      </div>
+      <div class="contact-item">
+        <i class="fas fa-phone"></i>
+        <div>
+          <strong>Phone</strong><br />
+          +91 9791622030
+        </div>
+      </div>
+      <div class="contact-item">
+        <i class="fas fa-map-marker-alt"></i>
+        <div>
+          <strong>Location</strong><br />
+          Chennai, Tamil Nadu, India
+        </div>
+      </div>
+      <div class="contact-item">
+        <i class="fab fa-linkedin"></i>
+        <div>
+          <strong>LinkedIn</strong><br />
+          linkedin.com/in/sadiq-ali-309215246
+        </div>
+      </div>
+    </div>
+
+    <!-- Message Box -->
+    <div class="contact-card">
+      <h3>Let's Work Together</h3>
+      <p>
+        I'm always interested in new opportunities, whether it's a freelance project, full-time position, or collaboration. Feel free to reach out!
+      </p>
+
+      <a href="mailto:sadiqilaqidas@gmail.com" class="email-button">
+        <i class="fas fa-envelope"></i> Send Email
+      </a>
+
+      <div class="social-buttons">
+        <a href="https://www.linkedin.com/in/sadiq-ali-309215246" target="_blank" class="social-btn linkedin">
+          <i class="fab fa-linkedin"></i> LinkedIn
+        </a>
+        <a href="https://github.com/ASSA2004" target="_blank" class="social-btn github">
+          <i class="fab fa-github"></i> GitHub
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    © 2024 Sadiq Ali.
+  </footer>
+</section>
+
+
 </body>
 </html>
